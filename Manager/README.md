@@ -38,7 +38,7 @@ Ela possui os seguintes rotas:
 
   Rota de login: para que o usuário faça o login na aplicação e receba um token.
 
-  -  https://sbseg.azurewebsites.net/api​/v1​/auth​/login
+  -  https://sbseg.azurewebsites.net/api/v1/auth/login
   -  Que recebe no corpo o e-mail e a senha do usuário
 
   ```JSON
@@ -54,7 +54,7 @@ Ela possui os seguintes rotas:
 
   Rota de upload de um avatar: para que o usuário faça um upload de uma imagem base64 para seu perfil.
 
-  -  https://sbseg.azurewebsites.net/api​/v1​/auth​/avatar
+  -  https://sbseg.azurewebsites.net/api/v1/auth/avatar
   -  Que recebe no corpo o e-mail e um avatar que é uma imagem do tipo base64
   -  Essa requisição também deve ter um token do tipo Bearer vindo do login
 
@@ -71,7 +71,7 @@ Ela possui os seguintes rotas:
 
   Rota de criação: serve para inserir/criar um novo usuário.
 
-  -  https://sbseg.azurewebsites.net/api​/v1​/users/create
+  -  https://sbseg.azurewebsites.net/api/v1/users/create
   -  Que recebe no corpo o name, e-mail, password e username
 
   ```JSON
@@ -82,12 +82,29 @@ Ela possui os seguintes rotas:
   "username": "stringst"
   }
   ```
+* Update
 
+  Falta melhorias
+  
+  Rota de Update: serve para editar um usuário.
+
+  -  https://sbseg.azurewebsites.net/api/v1/users/update
+  -  Que recebe no corpo o name, e-mail, password e username
+
+  ```JSON
+  {
+  "name": "string",
+  "email": "stringstri",
+  "password": "stringst",
+  "username": "stringst"
+  }
+  ```
+ 
 * Remove
 
   Rota de remoção: serve para remover um usuário.
 
-  -  https://sbseg.azurewebsites.net/api​/v1​/users/remove/{id}
+  -  https://sbseg.azurewebsites.net/api/v1/users/remove/{id}
   -  Que recebe como parâmetro o id do usuário a ser removido
   -  Essa requisição também deve ter um token do tipo Bearer vindo do login
 
@@ -95,7 +112,7 @@ Ela possui os seguintes rotas:
 
   Rota de get: serve para buscar um usuário em específico.
 
-  -  https://sbseg.azurewebsites.net/api​/v1​/users/get/{id}
+  -  https://sbseg.azurewebsites.net/api/v1/users/get/{id}
   -  Que recebe como parâmetro o id do usuário a ser buscado retornando ele caso encontre
   -  Essa requisição também deve ter um token do tipo Bearer vindo do login
 
@@ -103,14 +120,14 @@ Ela possui os seguintes rotas:
 
   Rota de get: serve para buscar todos os usuários da aplicação
 
-  -  https://sbseg.azurewebsites.net/api​/v1​/users/get-all
+  -  https://sbseg.azurewebsites.net/api/v1/users/get-all
   -  Essa requisição também deve ter um token do tipo Bearer vindo do login
 
 * Get-By-Email
 
   Rota de remoção: serve para remover um usuário.
 
-  -  https://sbseg.azurewebsites.net/api​/v1​/users/get-by-email
+  -  https://sbseg.azurewebsites.net/api/v1/users/get-by-email
   -  Que recebe como parâmetro uma querry com uma string do e-mail do usuário a ser buscado
   -  Essa requisição também deve ter um token do tipo Bearer vindo do login
 
@@ -118,7 +135,7 @@ Ela possui os seguintes rotas:
 
   Rota de get pelo nome: serve para buscar usuários com nome semelhante do requisitado.
 
-  -  https://sbseg.azurewebsites.net/api​/v1​/users/search-by-name
+  -  https://sbseg.azurewebsites.net/api/v1/users/search-by-name
   -  Que recebe como parâmetro uma querry com uma string do nome do usuário a ser buscado
   -  Essa requisição também deve ter um token do tipo Bearer vindo do login
 
@@ -126,7 +143,7 @@ Ela possui os seguintes rotas:
 
   Rota de get pelo email: serve para buscar usuários com email semelhante do requisitado.
 
-  -  https://sbseg.azurewebsites.net/api​/v1​/users/search-by-email
+  -  https://sbseg.azurewebsites.net/api/v1/users/search-by-email
   -  Que recebe como parâmetro uma querry com uma string do email do usuário a ser buscado
   -  Essa requisição também deve ter um token do tipo Bearer vindo do login
 
