@@ -4,6 +4,9 @@
 
 > Este projeto tem como objetivo transformar os eventos em games, incentivando as pessoas a se tornarem mais participativas durante o evento com incentivo de pontuações e recompensas por ações que elas fazem. Este projeto terá dois aplicativos, um para os usuários verem suas pontuações e poderem escanear QR Codes durante o evento que lhes darão pontuações caso elas terminem o desafio proposto no QR Code, também poderão fazer perguntas durante as palestras, compartilhar, ser notificado caso um evento ira começar, avaliar as palestras assistidas, escanear QR Codes de outros usuários e poder visualizar suas redes sociais e assim poder se conectar com elas. O outro será um aplicativo gerenciador para as pessoas do grupo de organização do evento para fazer o check-in, e atribuir pontos aos usuários caso necessário, também visualizar a lista de presença e o ranking da gamificação, e sortear prêmios para as pessoas presentes em uma palestra.  
 
+> Link do designer feito por mim: [Manager Gamification](https://www.figma.com/file/7t8Hto69dYbK7h5IrumUyv/Gamification-SBSeg?node-id=0%3A1)
+
+
 ### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
